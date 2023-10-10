@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    padding: 25px;
+    display: grid;
+    gap: 20px;
+}
+
+.purple {
+    position: relative;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.purple,
+.wheat,
+.darkblue,
+.white,
+.grey {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.username1,
+.username2,
+.username4 {
+    color: hsl(0, 0%, 81%);
+    font-weight: 600;
+}
+
+.username3,
+.username5 {
+    color: hsl(219, 29%, 14%);
+}
+
+.comma {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-profile img {
+    width: 100%;
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.purple-head,
+.grey-head,
+.darkblue-head {
+    color: hsl(210, 46%, 95%);
+}
+
+.wheat-head,
+.white-head {
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+}
+
+.purple-head,
+.grey-head,
+.darkblue-head,
+.wheat-head,
+.white-head {
+    padding: 20px 0;
+}
+
+.purple-paragraph,
+.grey-paragraph,
+.darkblue-paragraph {
+    color: hsl(0, 0%, 81%);
+}
+
+.purple-paragraph,
+.grey-paragraph,
+.darkblue-paragraph,
+.wheat-paragraph,
+.white-paragraph {
+    line-height: 25px;
+}
+
+.grey {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.details span {
+    font-size: 14px;
+}
+
+.wheat {
+    background-color: white;
+}
+
+.darkblue {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.white {
+    background-color: white;
+}
+
+.dark {
+    color: hsl(217, 19%, 35%);
+}
+
+.light {
+    color: hsl(0, 0%, 81%);
+}
+
+@media (min-width: 680px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "Dan Dan Jon Kira"
+        "Jen Pat Pat Kira"
+        ;
+        gap: 20px;
+    }
+
+    .purple {
+        grid-area: Dan;
+    }
+
+    .grey {
+        grid-area: Jon;
+    }
+
+    .wheat {
+        grid-area: Jen;
+    }
+
+    .darkblue {
+        grid-area: Pat;
+    }
+
+    .white {
+        grid-area: Kira;
+    }
+}
