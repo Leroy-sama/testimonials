@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-family: "Barlow Semi Condensed", sans-serif;
+    line-height: 1.5;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 .purple {
     position: relative;
     background-color: hsl(263, 55%, 52%);
+    z-index: 999991;
 }
 
 .purple,
@@ -28,7 +30,7 @@ body {
 .white,
 .grey {
     border-radius: 10px;
-    padding: 20px;
+    padding: 2em;
 }
 
 .username1,
@@ -45,8 +47,9 @@ body {
 
 .comma {
     position: absolute;
-    right: 20px;
+    right: 10%;
     top: 0;
+    z-index: -1;
 }
 
 .user-profile {
@@ -78,7 +81,7 @@ body {
 .darkblue-head,
 .wheat-head,
 .white-head {
-    padding: 20px 0;
+    padding: 1em 0;
 }
 
 .purple-paragraph,
@@ -127,10 +130,9 @@ body {
     .container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: 
-        "Dan Dan Jon Kira"
-        "Jen Pat Pat Kira"
-        ;
+        grid-template-areas:
+            "Dan Dan Jon Kira"
+            "Jen Pat Pat Kira";
         gap: 20px;
     }
 
@@ -152,5 +154,11 @@ body {
 
     .white {
         grid-area: Kira;
+    }
+
+    .comma {
+        width: 100%;
+        max-width: 140px;
+        right: 18%;
     }
 }
